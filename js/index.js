@@ -38,4 +38,20 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   /* SEARCH */
+
+  const searchIcon = document.querySelector(".search-icon"),
+    searchBlock = document.querySelector(".top__nav-search"),
+    searchClear = document.querySelector(".search-clear"),
+    searchInp = document.querySelector("#search");
+
+  searchIcon.addEventListener("click", function () {
+    searchBlock.classList.add("search-active");
+    searchClear.style.display = "block";
+  });
+
+  searchClear.addEventListener("click", function () {
+    searchBlock.classList.remove("search-active");
+    searchClear.style.display = "none";
+    searchInp.value = "";
+  });
 });

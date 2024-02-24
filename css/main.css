@@ -202,6 +202,75 @@ hr {
   color: #fff;
 }
 
+.top__nav-search {
+  position: relative;
+  width: 50px;
+  height: 55px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.search-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.search-active {
+  width: 404px;
+  background-color: rgb(127, 157, 100);
+}
+
+.search-clear {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.search-clear::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.search-clear::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  transform: rotate(315deg);
+}
+
+.search-input {
+  position: relative;
+  width: 280px;
+  height: 55px;
+  left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  position: absolute;
+  background: rgb(127, 157, 100);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
 .top__main {
   display: flex;
   flex-direction: column;
