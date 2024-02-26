@@ -89,6 +89,11 @@ hr {
 
 .menu__nav-link {
   font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.menu__nav-link:hover {
+  color: #69a54d;
 }
 
 .mail {
@@ -200,6 +205,23 @@ hr {
   font-size: 20px;
   font-weight: 600px;
   color: #fff;
+  position: relative;
+}
+
+.top__nav-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.5s ease-out;
+}
+
+.top__nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .top__nav-search {
@@ -393,12 +415,18 @@ hr {
   padding-top: 23px;
   padding-left: 24px;
   position: relative;
+  overflow: hidden;
 }
 
 .category__list-item img {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.7s ease;
+}
+
+.category__list-item:hover img {
+  transform: scale(1.05);
 }
 
 .category__list-block {
@@ -407,12 +435,18 @@ hr {
   padding-left: 27px;
   padding-top: 27px;
   position: relative;
+  overflow: hidden;
 }
 
 .category__list-block img {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.7s ease;
+}
+
+.category__list-block:hover img {
+  transform: scale(1.03);
 }
 
 .block-num {
@@ -487,12 +521,18 @@ hr {
   position: relative;
   padding-left: 516px;
   padding-top: 160px;
+  overflow: hidden;
 }
 
 .card-img img {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.7s ease;
+}
+
+.card-img:hover img {
+  transform: scale(1.03);
 }
 
 .card-img div {
@@ -508,6 +548,10 @@ hr {
   color: #69a54d;
   margin-top: 31px;
   margin-bottom: 20px;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
 }
 
 .card-text {
@@ -553,8 +597,17 @@ hr {
   min-height: 520px;
 }
 
+.inner-img {
+  overflow: hidden;
+}
+
 .inner-img img {
   width: 100%;
+  transition: 0.7s ease;
+}
+
+.inner-img:hover img {
+  transform: scale(1.03);
 }
 
 .inner-title {
@@ -562,6 +615,10 @@ hr {
   font-size: 22px;
   color: #69a54d;
   margin-top: 31px;
+}
+
+.inner-title:hover {
+  text-decoration: underline;
 }
 
 .inner-subtitle {
@@ -613,6 +670,8 @@ hr {
   background-color: #7f9d64;
   font-size: 16px;
   line-height: 150%;
+  outline: none;
+  color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -652,8 +711,13 @@ hr {
   line-height: 150%;
   color: #69a54d;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
+.form__btn button:hover {
+  background-color: #cdbd84;
+  color: white;
+}
 /* -----------------FOOTER TOP------------------ */
 
 .footer__top {
@@ -675,6 +739,9 @@ hr {
   gap: 20px;
 }
 
+.footer__top-item a:hover {
+  text-decoration: underline;
+}
 /* -----------------FOOTER MAIN------------------ */
 
 .footer__main {

@@ -54,4 +54,6 @@ window.addEventListener("DOMContentLoaded", function () {
     searchClear.style.display = "none";
     searchInp.value = "";
   });
+
+  /* SLIDER TOP */
 });
