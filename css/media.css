@@ -271,10 +271,6 @@
     line-height: 171%;
   }
 
-  .fade {
-    display: none;
-  }
-
   /* -----------------FOOTER TOP------------------ */
 
   .footer__top {
@@ -507,20 +503,12 @@
 
   /* -----------------MAIN NEWS------------------ */
 
-  .news__container {
-    justify-content: center;
-  }
-
   .news__title-arrow {
     display: none;
   }
 
   .news__title {
     justify-content: center;
-  }
-
-  #fade {
-    display: none;
   }
 
   /* -----------------FOOTER MAIN------------------ */

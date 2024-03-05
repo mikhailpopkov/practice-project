@@ -55,5 +55,38 @@ window.addEventListener("DOMContentLoaded", function () {
     searchInp.value = "";
   });
 
-  /* SLIDER TOP */
+  /* SLIDERS */
+
+  const slider = document.querySelectorAll(".swiper");
+
+  const swiperTop = new Swiper(slider[0], {
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".arrow-right",
+      prevEl: ".arrow-left",
+    },
+    autoplay: {
+      delay: 5000,
+    },
+    effect: "fade",
+  });
+
+  const swiperNews = new Swiper(slider[1], {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+    navigation: {
+      nextEl: ".n-arrow-right",
+      prevEl: ".n-arrow-left",
+    },
+  });
 });
