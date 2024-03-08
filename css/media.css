@@ -303,6 +303,12 @@
 }
 
 @media (max-width: 768px) {
+  /*BURGER*/
+
+  .burger {
+    width: 100%;
+  }
+
   /* -----------------HEADER------------------ */
 
   .menu {

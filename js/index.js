@@ -89,4 +89,20 @@ window.addEventListener("DOMContentLoaded", function () {
       prevEl: ".n-arrow-left",
     },
   });
+
+  /* BURGER MENU */
+
+  let burgerMenu = document.querySelector(".menu__btn"),
+    burgerBlock = document.querySelector(".burger"),
+    body = document.querySelector("body");
+
+  burgerMenu.addEventListener("click", function () {
+    burgerMenu.classList.toggle("active");
+    burgerBlock.classList.toggle("active");
+    if (burgerBlock.classList.contains("active")) {
+      body.classList.add("hidden");
+    } else {
+      body.classList.remove("hidden");
+    }
+  });
 });
