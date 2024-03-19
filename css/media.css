@@ -356,6 +356,27 @@
 
   .form__inner {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
+  }
+
+  .form__inner-block .block-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .form__inner-block .block-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .form__inner-block .block-3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  .main-input {
+    height: 100%;
+    grid-area: 1 / 2 / 4 / 2;
   }
 
   .form__title h2 {
@@ -609,8 +630,22 @@
 
   /* -----------------MAIN FORM------------------ */
 
-  .form__title {
+  .form {
+    height: 647px;
+  }
+
+  .form__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__title h2{
+    padding-top: 50px;
     font-weight: 700;
     font-size: 24px;
+  }
+
+  .main-input {
+    height: 105px;
   }
 }
